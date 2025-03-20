@@ -1189,3 +1189,37 @@ body {
         justify-content: flex-start;
     }
 }
+
+.lightning-segment {
+    position: absolute;
+    background-color: #0066cc;
+    box-shadow: 0 0 10px #00aaff, 0 0 20px #0088ff;
+    pointer-events: none;
+    z-index: 9999;
+    transform-origin: 0 0;
+}
+
+.lightning-glow {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #00aaff;
+    box-shadow: 0 0 15px 5px #00aaff;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 9998;
+    opacity: 0.7;
+}
+
+.custom-cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #00aaff;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 10000;
+    box-shadow: 0 0 15px #00aaff;
+}

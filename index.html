@@ -13,27 +13,6 @@
 <meta name="description" content="Vote Soji" />
 <meta name="author" content="Prince" />
 <meta property="og:image" content="https://otiktpyazqotihijbwhm.supabase.co/storage/v1/object/public/images/52f23251-f80e-4179-9b79-2146dd90dbb2-IMG_0049.JPG" />
-    <style>
-        .trail {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    pointer-events: none;
-    animation: fadeOut 0.5s linear forwards;
-}
-
-@keyframes fadeOut {
-    0% {
-        opacity: 1;
-        transform: scale(1);
-    }
-    100% {
-        opacity: 0;
-        transform: scale(2);
-    }
-}
-    </style>
 </head>
 <body>
     <!-- Background elements -->
@@ -44,7 +23,7 @@
         <div class="curved-line"></div>
         <div class="curved-line"></div>
     </div>
-
+    <div class="custom-cursor"></div>
     <!-- Main content -->
     <div class="container" id="home">
         <div class="content">
@@ -317,25 +296,7 @@
         </div>
     </footer>
 
-<script>
-    document.addEventListener("mousemove", function (e) {
-    const colors = ["#FF0000", "#FF7F00", "#FFFF00", "#00FF00", "#0000FF", "#4B0082", "#8B00FF"]; // Rainbow colors
-    const trail = document.createElement("div");
 
-    trail.classList.add("trail");
-    document.body.appendChild(trail);
-
-    let randomColor = colors[Math.floor(Math.random() * colors.length)];
-
-    trail.style.left = ${e.pageX}px;
-    trail.style.top = ${e.pageY}px;
-    trail.style.backgroundColor = randomColor;
-
-    setTimeout(() => {
-        trail.remove();
-    }, 500); // Remove after animation completes
-});
-</script>
     <script>
         // Function to check if element is in viewport
         function isInViewport(element) {
@@ -374,6 +335,8 @@
     <script>
         lucide.createIcons();
     </script>
+
+
     <script src="script.js"></script>
 </body>
 </html>
